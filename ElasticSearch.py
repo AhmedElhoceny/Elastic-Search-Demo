@@ -5,7 +5,8 @@ client = Elasticsearch(
   api_key=""
 )
 
-client.info()
+info = client.info()
+print(info)
 
 documents = [
   { "index": { "_index": "search-tests", "_id": "9780553351927"}},
